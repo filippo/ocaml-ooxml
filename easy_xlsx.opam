@@ -13,14 +13,17 @@ build: [
 
 depends: [
   "camlzip"
-  "ocaml" {>= "4.04.2"}
+  "ocaml" {>= "5.1.0"}
   "ppx_jane"
   "ptime"
   "spreadsheetml"
 
-  "bisect_ppx" {build & >= "1.3.0"}
+  "bisect_ppx" {build & >= "2.8.0"}
   "dune" {build}
 
   "csv" {test}
   "ounit" {test}
 ]
+name: "easy_xlsx"
+version: "1.0"
+synopsis: "A library to easily read XLSX files into a simpler format"

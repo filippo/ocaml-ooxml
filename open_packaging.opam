@@ -1,5 +1,6 @@
 opam-version: "2.0"
 authors: ["Brendan Long <self@brendanlong.com>"]
+synopsis: "A library for parsing Microsoft's Open Packaging Specification (most commonly used for Microsoft Office's 'Office Open XML')"
 maintainer: "self@brendanlong.com"
 homepage: "https://github.com/brendanlong/ocaml-ooxml"
 dev-repo: "git+https://github.com/brendanlong/ocaml-ooxml.git"
@@ -12,15 +13,17 @@ build: [
 ]
 
 depends: [
-  "base" {= "v0.14.1"}
-  "ocaml" {>= "4.04.2"}
+  "base" {>= "v0.16.0"}
+  "ocaml" {>= "5.1.0"}
   "ppx_jane"
   "sexplib"
   "stdint"
   "xml-light"
 
-  "bisect_ppx" {build & >= "1.3.0"}
+  "bisect_ppx" {build & >= "2.8.0"}
   "dune" {build}
 
   "ounit" {test}
 ]
+name: "open_packaging"
+version: "1.0"
